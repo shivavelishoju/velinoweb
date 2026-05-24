@@ -1243,7 +1243,7 @@ class="bg-slate-800 border border-slate-600 text-white px-5 py-3 rounded-full fo
 
 <!-- Tools & Technologies -->
 <!-- Tools & Technologies -->
-<div class="mt-20 px-8">
+<div class="mt-10 px-4 md:px-8">
 
     <!-- Section Title -->
     <div class="text-center mb-12 ">
@@ -1261,7 +1261,7 @@ class="bg-slate-800 border border-slate-600 text-white px-5 py-3 rounded-full fo
     </div>
 
     <!-- Technology Grid -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 ">
 
         <!-- HTML5 -->
         <div onclick="showTech('HTML5','Experienced in building semantic, responsive, and modern web interfaces using HTML5 standards.')"
@@ -1410,6 +1410,20 @@ class="bg-slate-800 border border-slate-600 text-white px-5 py-3 rounded-full fo
     </div>
 
 </div>
+ <div class="text-center mb-12 ">
+
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+             <span class="gradient-text"></span>
+        </h3>
+
+        <!-- <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Technologies, frameworks, and development tools I use to build
+            embedded systems, smart automation platforms, IoT applications,
+            and modern software experiences.
+        </p> -->
+
+    </div>
+
 <!-- Modal -->
 <div id="techModal"
 class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
@@ -1457,401 +1471,406 @@ class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
         
         </script>
     
-  <!-- Projects Section -->
+<!-- PROJECTS SECTION -->
 <section id="projects" class="py-20 bg-darker">
-    <div class="container mx-auto px-1">
+
+    <div class="container mx-auto px-6">
+
+        <!-- HEADING -->
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">
                 My <span class="gradient-text">Projects</span>
             </h2>
+
             <p class="text-slate-400 max-w-2xl mx-auto">
-                Innovative embedded systems, IoT devices, software applications, and smart automation projects developed under the VELINO ecosystem.
+                Innovative embedded systems, IoT devices, robotics, automation,
+                and software applications developed under the VELINO ecosystem.
             </p>
-            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+
+            <div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-5 rounded-full"></div>
+
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Project 1 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
-'VELINO IDE',
-'A custom lightweight development environment built for embedded systems and IoT projects with serial monitoring, board management, and modern UI support.',
-'Electron.js, Node.js, Embedded Systems',
-'https://i.postimg.cc/qv6pHgjq/velino-ide.png',
-'#',
-'#'
-)">
-                <div class="h-64 overflow-hidden">
+            <!-- PROJECT 1 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'VELINO IDE',
+                
+                'VELINO IDE is a modern custom development environment designed for embedded systems, IoT development, and smart hardware programming. Built using Electron.js and Node.js, the IDE provides a lightweight yet powerful platform for developing, compiling, uploading, and monitoring embedded applications with an intuitive futuristic interface. The IDE simplifies embedded workflows by combining code editing, serial communication, project management, and hardware integration into one unified platform. Features include Arduino & ESP32 support, integrated Serial Monitor, syntax highlighting, project management tools, Arduino CLI integration, custom themes, smooth animations, and optimized performance for IoT and robotics development.',
+                
+                'Electron.js, Node.js, JavaScript, HTML5, CSS3, Arduino CLI, Monaco Editor, SerialPort',
+                
+                'https://i.postimg.cc/qv6pHgjq/velino-ide.png',
+                
+                '#',
+                '#'
+                )">
+
+                <div class="h-72 overflow-hidden bg-black">
                     <img src="https://i.postimg.cc/qv6pHgjq/velino-ide.png"
                          alt="VELINO IDE"
-                         class="w-full h-full object-cover">
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">VELINO IDE</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        A custom lightweight development environment built for embedded systems and IoT projects with serial monitoring, board management, and modern UI support.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Electron.js</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Node.js</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Embedded Systems</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VELINO IDE</h3>
                 </div>
+
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
+            <!-- PROJECT 2 -->
+            <div class="project-card group"
+            onclick="openProject(
 'VELINO BOARD',
-'A custom-designed smart development board integrating relays, Bluetooth, sensors, and automation modules for IoT and robotics applications.',
-'ESP32, PCB Design, IoT',
+
+'VELINO BOARD is a custom-designed smart embedded development board created for IoT, robotics, automation, and intelligent hardware applications. The board integrates multiple modules including relay control, Bluetooth communication, sensor interfaces, power management, and GPIO expansion into a single compact platform. Designed to simplify rapid prototyping and real-world hardware development, VELINO BOARD supports wireless automation, sensor monitoring, robotics control, and smart home applications. The system is optimized for ESP32-based projects with efficient PCB layout, stable power delivery, and modular hardware architecture for future expansion.',
+
+'ESP32, PCB Design, IoT, Embedded Systems, Bluetooth, Relay Control, Sensors, Robotics',
+
 'https://i.postimg.cc/NfzQnR7G/velino-board.png',
+
 '#',
 '#'
 )">
-                <div class="h-64 overflow-hidden">
+
+                <div class="h-72 overflow-hidden bg-black">
                     <img src="https://i.postimg.cc/NfzQnR7G/velino-board.png"
                          alt="VELINO BOARD"
-                         class="w-full h-full object-cover">
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">VELINO BOARD</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        A custom-designed smart development board integrating relays, Bluetooth, sensors, and automation modules for IoT and robotics applications.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">PCB Design</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">IoT</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VELINO BOARD</h3>
                 </div>
+
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
+            <!-- PROJECT 3 -->
+            <div class="project-card group"
+            onclick="openProject(
 'VELINO AIRPAD',
-'A wireless Bluetooth gaming controller designed using ESP32 with joystick controls, multiple gaming modes, and mobile/PC connectivity.',
-'ESP32, BLE, Gamepad',
-'https://i.postimg.cc/13Vy14Jm/velino-airpad.png',
+
+'VELINO AIRPAD is a custom wireless gaming controller developed using ESP32 technology for mobile, PC, and IoT-based gaming applications. Designed with ergonomic controls and low-latency Bluetooth communication, the AirPad delivers smooth and responsive gameplay experiences. The project integrates joystick modules, multiple control buttons, wireless BLE connectivity, rechargeable power management, and custom PCB design to create a compact futuristic gaming device. VELINO AIRPAD demonstrates embedded systems engineering, wireless communication, and real-time interactive control for smart gaming and robotics applications.',
+
+'ESP32, BLE, Gamepad Development, Embedded Systems, PCB Design, Wireless Communication, Joystick Control',
+
+'https://i.postimg.cc/yYFR6gB1/IMG-3239.avif',
+
 '#',
 '#'
 )">
-                <div class="h-64 overflow-hidden">
-                    <img src=" https://i.postimg.cc/13Vy14Jm/velino-airpad.png"
+
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/yYFR6gB1/IMG-3239.avif"
                          alt="VELINO AIRPAD"
-                         class="w-full h-full object-cover">
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">VELINO AIRPAD</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        A wireless Bluetooth gaming controller designed using ESP32 with joystick controls, multiple gaming modes, and mobile/PC connectivity.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">BLE</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Gamepad</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VELINO AIRPAD</h3>
                 </div>
+
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
-'VADDI Calculator App',
-'A smart interest calculation application designed for EMI, loan, and monthly finance calculations with Telugu and English support.',
-'MIT App Inventor, Android, Finance App',
-'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1470&auto=format&fit=crop',
-'#',
-'#'
-)">
-                <div class="h-64 overflow-hidden">
+            <!-- PROJECT 4 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'VADDI Calculator App',
+                
+                'VADDI Calculator is a smart finance and interest calculation application developed to simplify EMI, loan, and monthly interest calculations with a clean and user-friendly mobile interface. The application supports both Telugu and English languages, making financial calculations easier and more accessible for regional users. Built using MIT App Inventor, the app includes features such as simple interest calculation, monthly EMI estimation, Indian number formatting, quick finance utilities, and responsive mobile interaction. The project focuses on creating practical financial tools with simple UI design and efficient performance for everyday users.',
+                
+                'MIT App Inventor, Android Development, Finance Application, UI Design, Mobile App Development',
+                
+                'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1470&auto=format&fit=crop',
+                
+                '#',
+                '#'
+                )">
+
+                <div class="h-72 overflow-hidden bg-black">
                     <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1470&auto=format&fit=crop"
                          alt="VADDI Calculator App"
-                         class="w-full h-full object-cover">
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">VADDI Calculator App</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        A smart interest calculation application designed for easy EMI, loan, and financial calculations with a clean and simple mobile interface.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">MIT App Inventor</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Android</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Finance App</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VADDI Calculator App</h3>
                 </div>
+
             </div>
 
-            <!-- Project 5 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
-'VELINO C3 AI PET BOT',
-'An AI-inspired desktop companion powered by ESP32-C3 featuring animated OLED eyes, smart notifications, and environmental monitoring.',
-'ESP32-C3, OLED Display, AI Companion',
-'https://i.postimg.cc/2SLCN32z/velino-c3-ai.jpg',
-'#',
-'#'
-)">
-                <div class="h-64 overflow-hidden">
+            <!-- PROJECT 5 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'VELINO C3 AI PET BOT',
+                
+                'VELINO C3 AI PET BOT is an AI-inspired smart desktop companion built using the ESP32-C3 microcontroller. The project features animated OLED eyes, interactive expressions, environmental monitoring, smart notifications, and real-time responsive behaviors to create an engaging robotic companion experience. Designed as a futuristic embedded AI device, the system combines intelligent animations, sensor integration, wireless communication, and compact hardware design. The bot is capable of displaying emotions, reacting to user interaction, monitoring environmental conditions, and serving as a smart IoT desktop assistant for modern automation ecosystems.',
+                
+                'ESP32-C3, OLED Display, Embedded Systems, IoT, AI Companion, Sensors, Wireless Communication, Animation Systems',
+                
+                'https://i.postimg.cc/2SLCN32z/velino-c3-ai.jpg',
+                
+                '#',
+                '#'
+                )">
+
+                <div class="h-72 overflow-hidden bg-black">
                     <img src="https://i.postimg.cc/2SLCN32z/velino-c3-ai.jpg"
                          alt="VELINO C3 AI PET BOT"
-                         class="w-full h-full object-cover">
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">VELINO C3 AI PET BOT</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        An AI-inspired desktop companion powered by ESP32-C3 featuring animated OLED eyes, environmental monitoring, smart notifications, and interactive expressions.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32-C3</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">OLED Display</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">AI Companion</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VELINO C3 AI </h3>
                 </div>
+
             </div>
 
-          <!-- Project 5 - Bionic Hand -->
-          <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-          onclick="openProject(
-          'Bionic Hand',
-          'An advanced robotic prosthetic hand developed using sensors and embedded systems to mimic real hand movements with gesture-based control and precision motion.',
-          'Embedded Systems, Servo Motors, Arduino',
-          'https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1470&auto=format&fit=crop',
-          '#',
-          '#'
-          )">
-    <div class="h-64 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1470&auto=format&fit=crop"
-             alt="Bionic Hand"
-             class="w-full h-full object-cover">
-    </div>
+            <!-- PROJECT 6 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'Bionic Hand',
+                
+                'Bionic Hand is an advanced robotic prosthetic hand designed using embedded systems, servo motor control, and sensor-based gesture recognition to mimic natural human hand movements. The project focuses on creating a smart robotic arm capable of performing precise finger movements, object gripping, and responsive motion control using real-time input signals. Developed for robotics, biomedical assistance, and automation research, the system demonstrates human-machine interaction through intelligent motion replication and embedded control technologies. The robotic hand integrates multiple servo motors, gesture sensing, wireless control capabilities, and programmable movement algorithms for realistic robotic functionality.',
+                
+                'Embedded Systems, Arduino, Servo Motors, Robotics, Gesture Control, Sensors, Prosthetic Robotics, Automation',
+                
+                'https://i.postimg.cc/P5gCndvr/maxresdefault.jpg',
+                
+                '#',
+                '#'
+                )">
 
-    <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Bionic Hand</h3>
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/P5gCndvr/maxresdefault.jpg"
+                         alt="Bionic Hand"
+                         class="project-image">
+                </div>
 
-        <p class="text-slate-400 mb-4">
-            An advanced robotic prosthetic hand developed using sensors and embedded systems to mimic real hand movements with gesture-based control and precision motion.
-        </p>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">Bionic Hand</h3>
+                </div>
 
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Embedded Systems</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Servo Motors</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Arduino</span>
-        </div>
+            </div>
 
-        <div class="flex space-x-3">
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fab fa-github"></i> Code
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Project 6 - Master Slave Robotic Hand -->
-<div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
+            <!-- PROJECT 7 -->
+            <div class="project-card group"
+            onclick="openProject(
 'Master Slave Robotic Hand',
-'A gesture-controlled robotic hand system where the slave robotic arm replicates the real-time movements of the master hand using flex sensors and wireless communication.',
-'Flex Sensors, Wireless Control, Robotics',
-'https://i.postimg.cc/fW2ngS1B/Whats-App-Image-2024-01-12-at-12-58-08-PM.jpg',
+
+'Master Slave Robotic Hand is a gesture-controlled robotic arm system designed to replicate real-time human hand movements using flex sensors and wireless communication technology. The master hand captures finger and motion gestures through sensor inputs, while the slave robotic hand accurately mirrors the same movements using servo motor control. The project demonstrates advanced human-machine interaction, embedded systems integration, and real-time robotics control for applications in automation, medical assistance, industrial robotics, and remote operation systems. The system focuses on precision movement, wireless synchronization, and intelligent robotic control architecture.',
+
+'Flex Sensors, Arduino, Servo Motors, Robotics, Wireless Communication, Embedded Systems, Gesture Control, Automation',
+
+'https://i.postimg.cc/kgFcBYNn/brazo-robotico-2.webp',
+
 '#',
 '#'
 )">
-    <div class="h-64 overflow-hidden">
-        <img src="https://i.postimg.cc/fW2ngS1B/Whats-App-Image-2024-01-12-at-12-58-08-PM.jpg"
-             alt="Master Slave Robotic Hand"
-             class="w-full h-full object-cover">
-    </div>
 
-    <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Master Slave Robotic Hand</h3>
-
-        <p class="text-slate-400 mb-4">
-            A gesture-controlled robotic hand system where the slave robotic arm replicates the real-time movements of the master hand using flex sensors and wireless communication.
-        </p>
-
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Flex Sensors</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Wireless Control</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Robotics</span>
-        </div>
-
-        <div class="flex space-x-3">
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fab fa-github"></i> Code
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Project 7 - ADAS -->
-<div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
-'Zone Based Advanced Driver Assistance System',
-'A smart vehicle safety system designed to detect obstacles, monitor blind zones, and provide intelligent driver assistance using sensors and AI-based decision logic.',
-'ADAS, IoT, Automation',
-'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1470&auto=format&fit=crop',
-'#',
-'#'
-)">
-    <div class="h-64 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1470&auto=format&fit=crop"
-             alt="Zone Based ADAS"
-             class="w-full h-full object-cover">
-    </div>
-
-    <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Zone Based Advanced Driver Assistance System</h3>
-
-        <p class="text-slate-400 mb-4">
-            A smart vehicle safety system designed to detect obstacles, monitor blind zones, and provide intelligent driver assistance using sensors and AI-based decision logic.
-        </p>
-
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ADAS</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">IoT</span>
-            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Automation</span>
-        </div>
-
-        <div class="flex space-x-3">
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-
-            <a href="#" class="text-primary hover:text-secondary">
-                <i class="fab fa-github"></i> Code
-            </a>
-        </div>
-    </div>
-</div>
-
-            <!-- Project 6 -->
-            <div class="project-card rounded-xl overflow-hidden card-hover cursor-pointer"
-onclick="openProject(
-'Smart Medicine Reminder',
-'An IoT-based medicine reminder system using ESP32, RTC, display modules, and mobile alerts to help users take medicines on time from anywhere.',
-'ESP32, IoT, Healthcare',
-'https://i.postimg.cc/PqzsdDDg/medicine-reminder.jpg',
-'#',
-'#'
-)">
-                <div class="h-64 overflow-hidden">
-                    <img src=" https://i.postimg.cc/PqzsdDDg/medicine-reminder.jpg"
-                         alt="Smart Medicine Reminder"
-                         class="w-full h-full object-cover">
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/kgFcBYNn/brazo-robotico-2.webp"
+                         alt="Master Slave Robotic Hand"
+                         class="project-image">
                 </div>
 
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Smart Medicine Reminder</h3>
-
-                    <p class="text-slate-400 mb-4">
-                        An IoT-based medicine reminder system using ESP32, RTC, display modules, and mobile alerts to help users take medicines on time from anywhere.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">IoT</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Healthcare</span>
-                    </div>
-
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-
-                        <a href="#" class="text-primary hover:text-secondary">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
+                <div class="p-5 text-center">
+                    <h3 class="project-title">Master Slave Robotic Hand</h3>
                 </div>
+
+            </div>
+
+            <!-- PROJECT 8 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'Zone Based Advanced Driver Assistance System',
+                
+                'Zone Based Advanced Driver Assistance System (ADAS) is an intelligent vehicle safety and automation system developed to improve driver awareness, obstacle detection, and road safety using embedded sensors and smart decision-making algorithms. The system continuously monitors multiple vehicle zones including blind spots, front collision areas, and surrounding obstacles to provide real-time alerts and automated assistance. Designed for smart mobility and automotive safety applications, the project integrates ultrasonic sensors, IoT communication, automation logic, and embedded processing to create a reliable driver assistance platform. The system enhances navigation safety, collision prevention, and intelligent vehicle monitoring in real-world driving environments.',
+                
+                'ADAS, Embedded Systems, IoT, Ultrasonic Sensors, Automation, Robotics, Vehicle Safety Systems, Smart Mobility',
+                
+                'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1470&auto=format&fit=crop',
+                
+                '#',
+                '#'
+                )">
+
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1470&auto=format&fit=crop"
+                         alt="ADAS"
+                         class="project-image">
+                </div>
+
+                <div class="p-5 text-center">
+                    <h3 class="project-title">Zone Based ADAS</h3>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 9 -->
+<div class="project-card group rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 cursor-pointer"
+onclick="openProject(
+'VELINO FOOD DELIVERY ROBOT',
+
+'VELINO FOOD DELIVERY ROBOT is an autonomous smart robotic delivery system designed for restaurants, hospitals, hotels, and smart environments to enable efficient contactless delivery. The robot is capable of intelligent navigation, obstacle avoidance, wireless control, and tray-based item transportation using embedded systems and sensor-driven automation. Built to improve modern service automation, the system integrates motor control, real-time movement monitoring, and smart robotic interaction for seamless indoor delivery operations. The project demonstrates robotics engineering, IoT communication, automation technologies, and intelligent mobility systems for futuristic smart service applications.',
+
+'ESP32, Robotics, Automation, Sensors, Motor Drivers, Wireless Communication, Embedded Systems, IoT',
+
+'https://i.postimg.cc/dVjVpGF4/Screenshot-2026-05-24-at-3-25-03-PM.png',
+
+'#',
+'#'
+)">
+
+    <!-- IMAGE CONTAINER -->
+    <div class="h-72 w-full bg-black overflow-hidden flex items-center justify-center">
+
+        <img src="https://i.postimg.cc/dVjVpGF4/Screenshot-2026-05-24-at-3-25-03-PM.png"
+             alt="Food Delivery Robot"
+             class="w-full h-full object-contain group-hover:scale-105 transition duration-500 p-2">
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="p-5 text-center">
+
+        <h3 class="text-xl font-bold text-white mb-3">
+            VELINO FOOD DELIVERY ROBOT
+        </h3>
+
+       
+
+   
+
+    </div>
+
+</div>
+
+            <!-- PROJECT 10 -->
+            <div class="project-card group"
+            onclick="openProject(
+                'VELINO MECANUM SURVEILLANCE ROBOT',
+                
+                'VELINO MECANUM SURVEILLANCE ROBOT is an advanced omni-directional robotic surveillance system designed for intelligent monitoring, security inspection, and autonomous movement applications. Built using mecanum wheels, the robot can move smoothly in all directions including sideways, diagonal, and rotational movement, enabling high-precision navigation in complex environments. The system integrates wireless live monitoring, obstacle detection, real-time control, and smart robotic navigation for industrial, security, and research applications. Developed using embedded systems and IoT technologies, the project demonstrates intelligent robotics engineering, surveillance automation, and futuristic mobility control systems.',
+                
+                'ESP32, Mecanum Wheels, Robotics, Surveillance Systems, Embedded Systems, IoT, Automation',
+                
+                'https://i.postimg.cc/CKR9kVcp/1185c476-1e28-4e75-b7c7-dbd6b84b6fdd.png',
+                
+                '#',
+                '#'
+                )">
+
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/CKR9kVcp/1185c476-1e28-4e75-b7c7-dbd6b84b6fdd.png"
+                         alt="Mecanum Robot"
+                         class="project-image">
+                </div>
+
+                <div class="p-5 text-center">
+                    <h3 class="project-title">VELINO MECANUM SURVEILLANCE ROBOT</h3>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 11 -->
+            <div class="project-card group"
+            onclick="openProject(
+'ESP32 C3 MAP NAVIGATOR',
+
+'ESP32 C3 MAP NAVIGATOR is a smart navigation and location tracking system developed using the ESP32-C3 microcontroller for robotics, smart mobility, and IoT-based navigation applications. The system integrates GPS technology, digital map guidance, real-time location tracking, and wireless communication to provide intelligent navigation support for autonomous systems and embedded devices. Designed for smart robotics and mobility platforms, the project enables route monitoring, location visualization, and navigation assistance with efficient low-power embedded processing. The system demonstrates advanced IoT integration, GPS-based positioning, and real-time navigation control for futuristic automation and mapping solutions.',
+
+'ESP32-C3, GPS, Navigation Systems, IoT, Embedded Systems, Smart Mobility, Real-Time Tracking',
+
+'https://i.postimg.cc/xC7GWwQ8/mapnavigator.webp',
+
+'#',
+'#'
+)">
+
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/xC7GWwQ8/mapnavigator.webp"
+                         alt="Map Navigator"
+                         class="project-image">
+                </div>
+
+                <div class="p-5 text-center">
+                    <h3 class="project-title">ESP32 C3 MAP NAVIGATOR</h3>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 12 -->
+            <div class="project-card group"
+            onclick="openProject(
+            'Smart Medicine Reminder',
+'The Smart Medicine Reminder is an IoT-based healthcare solution designed to help users take medicines on time through smart alerts, automated scheduling, and real-time monitoring. Built using ESP32 technology, the system integrates RTC modules, buzzer alerts, display interfaces, and mobile connectivity to provide accurate reminders and improve medication management. The project focuses on healthcare automation, smart notifications, and user-friendly operation for elderly people and patients requiring regular medication schedules.',
+'ESP32, IoT, RTC Module, Healthcare Automation, Embedded Systems, Sensors',
+'https://i.postimg.cc/Qtx900Wt/IMG-3411.avif',
+'#',
+'#'
+            )">
+
+                <div class="h-72 overflow-hidden bg-black">
+                    <img src="https://i.postimg.cc/Qtx900Wt/IMG-3411.avif"
+                         alt="Medicine Reminder"
+                         class="project-image">
+                </div>
+
+                <div class="p-5 text-center">
+                    <h3 class="project-title">Smart Medicine Reminder</h3>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="text-center mt-12">
-            <!-- <a href="#"
-               class="px-8 py-3 rounded-full btn-primary font-medium inline-flex items-center">
-                Explore More Projects
-                <i class="fas fa-arrow-right ml-2"></i>
-            </a> -->
-        </div>
     </div>
+
 </section>
+
+<!-- CSS -->
+<style>
+
+.project-card{
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #0f172a;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(34,211,238,0.5);
+    box-shadow: 0 20px 40px rgba(34,211,238,0.15);
+}
+
+.project-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.project-card:hover .project-image{
+    transform: scale(1.08);
+}
+
+.project-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+</style>
 
 
     
@@ -2444,13 +2463,16 @@ class="fixed bottom-8 right-8 w-14 h-14 rounded-2xl bg-gradient-to-r from-primar
     <div id="projectModal"
     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-4 backdrop-blur-sm overflow-y-auto">
     
-        <div class="bg-slate-900 max-w-3xl w-full rounded-2xl overflow-hidden relative border border-cyan-500/20 shadow-2xl shadow-cyan-500/10">
-    
-            <!-- Image -->
-            <img id="modalImage"
-                 src=""
-                 class="w-full h-72 object-cover">
-    
+    <div class="bg-slate-900 max-w-5xl w-250px rounded-3xl overflow-hidden relative border border-cyan-500/20 shadow-2xl shadow-cyan-500/10">
+           <!-- IMAGE CONTAINER -->
+<div class="w-full h-[450px] bg-black flex items-center justify-center overflow-hidden">
+
+    <img id="modalImage"
+         src=""
+         alt="Project Image"
+         class="w-full h-full object-contain object-center transition duration-300">
+
+</div>
             <!-- Content -->
             <div class="p-8">
     
